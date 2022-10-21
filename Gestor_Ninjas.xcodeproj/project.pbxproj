@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		330045E4290318B500421E30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330045E3290318B500421E30 /* AppDelegate.swift */; };
 		330045E6290318B500421E30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330045E5290318B500421E30 /* SceneDelegate.swift */; };
-		330045E8290318B500421E30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330045E7290318B500421E30 /* ViewController.swift */; };
 		330045EB290318B500421E30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330045E9290318B500421E30 /* Main.storyboard */; };
 		330045ED290318B700421E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330045EC290318B700421E30 /* Assets.xcassets */; };
 		330045F0290318B700421E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330045EE290318B700421E30 /* LaunchScreen.storyboard */; };
+		330045FB29031A7B00421E30 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330045FA29031A7B00421E30 /* TableViewController.swift */; };
+		330045FD29031B1F00421E30 /* NinjaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330045FC29031B1F00421E30 /* NinjaCell.swift */; };
+		330045FF29031BCF00421E30 /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330045FE29031BCF00421E30 /* Ninja.swift */; };
+		3300460129031C6200421E30 /* NinjaGestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300460029031C6200421E30 /* NinjaGestor.swift */; };
+		3300460329031CE600421E30 /* TableViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3300460229031CE600421E30 /* TableViewControllerPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		330045E0290318B500421E30 /* Gestor_Ninjas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gestor_Ninjas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		330045E3290318B500421E30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		330045E5290318B500421E30 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		330045E7290318B500421E30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		330045EA290318B500421E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		330045EC290318B700421E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		330045EF290318B700421E30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		330045F1290318B700421E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		330045FA29031A7B00421E30 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		330045FC29031B1F00421E30 /* NinjaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaCell.swift; sourceTree = "<group>"; };
+		330045FE29031BCF00421E30 /* Ninja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
+		3300460029031C6200421E30 /* NinjaGestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaGestor.swift; sourceTree = "<group>"; };
+		3300460229031CE600421E30 /* TableViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,8 @@
 		330045F7290318D200421E30 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				330045FE29031BCF00421E30 /* Ninja.swift */,
+				3300460029031C6200421E30 /* NinjaGestor.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -79,7 +89,8 @@
 		330045F8290318DE00421E30 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				330045E7290318B500421E30 /* ViewController.swift */,
+				330045FA29031A7B00421E30 /* TableViewController.swift */,
+				330045FC29031B1F00421E30 /* NinjaCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -87,6 +98,7 @@
 		330045F9290318E700421E30 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				3300460229031CE600421E30 /* TableViewControllerPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -162,8 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				330045E8290318B500421E30 /* ViewController.swift in Sources */,
+				3300460129031C6200421E30 /* NinjaGestor.swift in Sources */,
 				330045E4290318B500421E30 /* AppDelegate.swift in Sources */,
+				330045FB29031A7B00421E30 /* TableViewController.swift in Sources */,
+				330045FD29031B1F00421E30 /* NinjaCell.swift in Sources */,
+				3300460329031CE600421E30 /* TableViewControllerPresenter.swift in Sources */,
+				330045FF29031BCF00421E30 /* Ninja.swift in Sources */,
 				330045E6290318B500421E30 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
