@@ -56,15 +56,39 @@
 		330045E2290318B500421E30 /* Gestor_Ninjas */ = {
 			isa = PBXGroup;
 			children = (
+				330045F9290318E700421E30 /* presenter */,
+				330045F8290318DE00421E30 /* view */,
+				330045F7290318D200421E30 /* model */,
 				330045E3290318B500421E30 /* AppDelegate.swift */,
 				330045E5290318B500421E30 /* SceneDelegate.swift */,
-				330045E7290318B500421E30 /* ViewController.swift */,
 				330045E9290318B500421E30 /* Main.storyboard */,
 				330045EC290318B700421E30 /* Assets.xcassets */,
 				330045EE290318B700421E30 /* LaunchScreen.storyboard */,
 				330045F1290318B700421E30 /* Info.plist */,
 			);
 			path = Gestor_Ninjas;
+			sourceTree = "<group>";
+		};
+		330045F7290318D200421E30 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		330045F8290318DE00421E30 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				330045E7290318B500421E30 /* ViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		330045F9290318E700421E30 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
